@@ -176,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <nav class="premium-gradient-blue text-white relative overflow-hidden">
+        <nav class="premium-gradient-blue text-white relative overflow-visible lg:overflow-visible">
             <div class="absolute inset-0 bg-white/5 pointer-events-none"></div>
             <div class="max-w-container-max mx-auto px-3 flex items-center justify-between h-16 relative z-10">
                 <div class="hidden lg:flex items-center gap-10">
@@ -188,8 +188,8 @@
                             <span>About</span>
                             <span class="material-symbols-outlined text-[16px] leading-none">expand_more</span>
                         </button>
-                        <div class="absolute left-0 top-full mt-3 hidden group-hover:block w-56 rounded-xl bg-primary/95 backdrop-blur-md border border-white/10 shadow-xl">
-                            <a class="block px-4 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-white/80 hover:text-white hover:bg-white/10" href="#">About School</a>
+                        <div class="absolute left-0 top-full z-[120] mt-3 block w-56 rounded-xl bg-primary/95 backdrop-blur-md border border-white/10 shadow-xl overflow-hidden">
+                            <a class="block px-4 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-white/80 hover:text-white hover:bg-white/10" href="#about-school">About School</a>
                             <a class="block px-4 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-white/80 hover:text-white hover:bg-white/10" href="#about-vision">Vision &amp; Mission</a>
                             <a class="block px-4 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-white/80 hover:text-white hover:bg-white/10" href="#about-campus">Campus Life</a>
                         </div>
@@ -233,12 +233,12 @@
                                 <span>About</span>
                                 <span class="material-symbols-outlined text-[18px]">expand_more</span>
                             </summary>
-                            <div class="mt-2 flex flex-col gap-2 items-center">
-                                <a class="font-headline text-sm font-semibold uppercase tracking-[0.15em] text-white/90 hover:text-white transition-all"
-                                    href="#">About School</a>
-                                <a class="font-headline text-sm font-semibold uppercase tracking-[0.15em] text-white/90 hover:text-white transition-all"
+                            <div class="mt-2 flex flex-col gap-2 items-center rounded-xl bg-white/5 p-2">
+                                <a class="w-full rounded-lg px-3 py-2 font-headline text-sm font-semibold uppercase tracking-[0.15em] text-white/90 hover:text-white hover:bg-white/10 transition-all"
+                                    href="#about-school">About School</a>
+                                <a class="w-full rounded-lg px-3 py-2 font-headline text-sm font-semibold uppercase tracking-[0.15em] text-white/90 hover:text-white hover:bg-white/10 transition-all"
                                     href="#about-vision">Vision &amp; Mission</a>
-                                <a class="font-headline text-sm font-semibold uppercase tracking-[0.15em] text-white/90 hover:text-white transition-all"
+                                <a class="w-full rounded-lg px-3 py-2 font-headline text-sm font-semibold uppercase tracking-[0.15em] text-white/90 hover:text-white hover:bg-white/10 transition-all"
                                     href="#about-campus">Campus Life</a>
                             </div>
                         </details>
@@ -308,10 +308,10 @@
         </div>
     </section>
     <!-- 3. About Section: Editorial Overlapping Layout -->
-    <section class="py-section-gap px-3 overflow-hidden">
+    <section class="py-section-gap px-3 overflow-hidden" id="about-school">
         <div class="max-w-container-max mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-                <div class="lg:col-span-6 relative">
+                <div class="lg:col-span-6 relative" id="about-campus">
                     <div class="reveal relative z-20 rounded-premium overflow-hidden shadow-2xl">
                         <img alt="Main Building"
                             class="w-full h-[600px] object-cover hover:scale-105 transition-transform duration-1000"
@@ -325,7 +325,7 @@
                     <div class="absolute -top-10 -left-10 w-64 h-64 bg-secondary/5 rounded-full blur-[100px] -z-10">
                     </div>
                 </div>
-                <div class="lg:col-span-6 lg:pl-12 reveal">
+                <div class="lg:col-span-6 lg:pl-12 reveal" id="about-vision">
                     <div class="flex items-center gap-4 mb-8">
                         <span class="w-12 h-0.5 bg-primary"></span>
                         <span class="font-bold text-primary tracking-[0.3em] uppercase text-xs">Our Legacy of
